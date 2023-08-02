@@ -15,7 +15,7 @@ const IndividualBlog = async ({ params: { id } }) => {
       <div className="flex flex-col w-full h-full justify-between">
         <div>
           <div className="body flex flex-col items-center mb-10">
-            <BlogContent indBlogData={blogData} full={true} />
+            <BlogContent indBlogData={blogData || []} full={true} />
           </div>
         </div>
         <Footer />

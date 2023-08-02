@@ -8,6 +8,9 @@ export const metadata = {
   description: "Turning your buisness digital",
 };
 
+export const dynamicParams = false;
+
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

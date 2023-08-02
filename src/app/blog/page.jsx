@@ -17,7 +17,7 @@ const Blog = async ({ searchParams }) => {
     <Navbar>
       <div className="flex flex-col w-full">
         <div className="body flex flex-col items-center">
-          {id ? <BlogContent indBlogData={indBlogData} id={id} /> : null}
+          {id ? <BlogContent indBlogData={indBlogData || []} id={id} /> : null}
 
           <div className="bg-base-100 text-base-content p-6 w-screen flex flex-col items-center mt-24">
             <h1 className="text-center text-3xl lg:text-5xl my-2">Our Blog</h1>
@@ -25,9 +25,6 @@ const Blog = async ({ searchParams }) => {
             <BlogSection data={data} id={id} />
           </div>
         </div>
-
-        <h1>Blog Page</h1>
-
         <Footer />
       </div>
     </Navbar>

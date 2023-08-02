@@ -24,7 +24,7 @@ export default async function Home() {
       <Testimonials />
       <About />
       <Projects />
-      <Blog blogs={blogs}/>
+      <Blog blogs={blogs || []}/>
       <FAQ />
       <Footer />
     </Navbar>
