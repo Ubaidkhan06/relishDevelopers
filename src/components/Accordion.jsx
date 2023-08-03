@@ -4,8 +4,7 @@ const Accordion = () => {
   return (
     <>
       {faqData?.map((ele, idx) => (
-        <>
-          <div className="collapse collapse-arrow bg-base-100 my-4">
+          <div key={idx} className="collapse collapse-arrow bg-base-100 my-4">
             <input type="radio" name="my-accordion-2" />
 
             <div className="collapse-title text-2xl font-medium">
@@ -18,7 +17,6 @@ const Accordion = () => {
               <p>{ele.answer}</p>
             </div>
           </div>
-        </>
       ))}
     </>
   );

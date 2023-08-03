@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { PopupWidget } from "react-calendly";
 import {
   framerTransition,
   fromLeft,
@@ -10,12 +9,6 @@ import {
 } from "@/utils/framerAnimations";
 
 const Hero = () => {
-  const [elem, setElem] = useState();
-
-  useEffect(() => {
-    const elem = document.getElementById("calendly");
-    setElem(elem);
-  }, []);
 
   const [text, setText] = useState("");
   const [fullText, setFullText] = useState(
@@ -92,17 +85,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="z-50">
-        {!elem ? null : (
-          <PopupWidget
-            text={"Schedule Call with us "}
-            color={"#56DCA4"}
-            rootElement={elem}
-            textColor={"#000"}
-            url="https://calendly.com/prajjwal-relish/idea-discussion"
-          />
-        )}
-      </div>
+
     </>
   );
 };

@@ -1,10 +1,10 @@
-"use client"
+"use client";
 import Carousel from "./Carousel";
 import TestimonialComponent from "./TestimonialComponent";
 
 const Testimonials = () => {
   return (
-    <div className="bg-base-300 text-base-content w-96 lg:w-full p-6 py-14">
+    <div className="bg-base-300 text-base-content w-96 lg:w-full p-6 py-28">
       <div className="flex flex-col lg:flex-row lg:p-8 justify-center  lg:m-4">
         <div className="space-y-4">
           <h1 className="text-4xl lg:text-5xl">

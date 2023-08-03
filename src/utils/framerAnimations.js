@@ -21,7 +21,7 @@ export const framerItem = {
 export const fromRight = {
   initial: {
     opacity: 0,
-    x: 300,
+    x: 100,
   },
   animate: {
     opacity: 1,
@@ -32,7 +32,7 @@ export const fromRight = {
 export const fromLeft = {
   initial: {
     opacity: 0,
-    x: -300,
+    x: -100,
   },
   animate: {
     opacity: 1,

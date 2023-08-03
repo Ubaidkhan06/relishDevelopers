@@ -1,4 +1,4 @@
-export const sidebarItems = ["Home", "About", "Services", "Blog", "Contact Us"];
+export const sidebarItems = ["Home", "About", "Services", "Projects" ,"Blog", "Contact Us"];
 export const howWeWork = [
   {
     name: "Strategy",
@@ -61,31 +61,31 @@ export const projects = [
     name: "BDRM",
     content:
       "lk,ahbkjvbkbc.j na.kjb ,ksb.cjaN kajshvkhb,khzbvhk,hfabs,kjvansdljn skj bkdfjsba.",
-    image: "/images/BDRM/1.png",
+    image: "/images/BDRM/1.webp",
   },
   {
     name: "BioVatika",
     content:
       "lk,ahbkjvbkbc.j na.kjb ,ksb.cjaN kajshvkhb,khzbvhk,hfabs,kjvansdljn skj bkdfjsba.",
-    image: "/images/Biovatika/1.png",
+    image: "/images/Biovatika/1.webp",
   },
   {
     name: "Khonsu",
     content:
       "lk,ahbkjvbkbc.j na.kjb ,ksb.cjaN kajshvkhb,khzbvhk,hfabs,kjvansdljn skj bkdfjsba.",
-    image: "/images/Khonshu/1.png",
+    image: "/images/Khonshu/1.webp",
   },
   {
     name: "Listen2Re",
     content:
       "lk,ahbkjvbkbc.j na.kjb ,ksb.cjaN kajshvkhb,khzbvhk,hfabs,kjvansdljn skj bkdfjsba.",
-    image: "/images/Listen2Re/1.png",
+    image: "/images/Listen2Re/1.webp",
   },
   {
     name: "URL Listner",
     content:
       "lk,ahbkjvbkbc.j na.kjb ,ksb.cjaN kajshvkhb,khzbvhk,hfabs,kjvansdljn skj bkdfjsba.",
-    image: "/images/Url Listener/1.png",
+    image: "/images/Url Listener/1.webp",
   },
 ];
 
@@ -225,10 +225,10 @@ export const biovatikaData = {
   client: "client",
   service: "web development",
   images: [
-    "/images/Biovatika/1.png",
-    "/images/Biovatika/4.png",
-    "/images/Biovatika/3.png",
-    "/images/Biovatika/2.png",
+    "/images/Biovatika/1.webp",
+    "/images/Biovatika/4.webp",
+    "/images/Biovatika/3.webp",
+    "/images/Biovatika/2.webp",
   ],
 };
 
@@ -245,10 +245,10 @@ export const urllistner = {
   client: "client",
   service: "web development",
   images: [
-    "/images/Url Listener/1.png",
-    "/images/Url Listener/4.png",
-    "/images/Url Listener/3.png",
-    "/images/Url Listener/2.png",
+    "/images/Url Listener/1.webp",
+    "/images/Url Listener/4.webp",
+    "/images/Url Listener/3.webp",
+    "/images/Url Listener/2.webp",
   ],
 };
 
@@ -265,10 +265,10 @@ export const bdrm = {
   client: "client",
   service: "web development",
   images: [
-    "/images/BDRM/1.png",
-    "/images/BDRM/4.png",
-    "/images/BDRM/3.png",
-    "/images/BDRM/2.png",
+    "/images/BDRM/1.webp",
+    "/images/BDRM/4.webp",
+    "/images/BDRM/3.webp",
+    "/images/BDRM/2.webp",
   ],
 };
 
@@ -285,10 +285,10 @@ export const khonsu = {
   client: "client",
   service: "web development",
   images: [
-    "/images/Khonshu/1.png",
-    "/images/Khonshu/2.png",
-    "/images/Khonshu/3.png",
-    "/images/Khonshu/5.png",
+    "/images/Khonshu/1.webp",
+    "/images/Khonshu/2.webp",
+    "/images/Khonshu/3.webp",
+    "/images/Khonshu/5.webp",
   ],
 };
 
@@ -305,10 +305,10 @@ export const listen2re = {
   client: "client",
   service: "web development",
   images: [
-    "/images/Listen2Re/1.png",
-    "/images/Listen2Re/4.png",
-    "/images/Listen2Re/3.png",
-    "/images/Listen2Re/2.png",
+    "/images/Listen2Re/1.webp",
+    "/images/Listen2Re/4.webp",
+    "/images/Listen2Re/3.webp",
+    "/images/Listen2Re/2.webp",
   ],
 };
 export const tempContent = [
@@ -359,4 +359,13 @@ export const faqData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut \
         labore et dolore magna aliqua.",
   },
+];
+
+export const arrTools = [
+  { name: "Frontend", arr: frontEnd },
+  { name: "Frontend", arr: backend },
+  { name: "Frontend", arr: database },
+  { name: "Frontend", arr: devOps },
+  { name: "Frontend", arr: projectManagementTools },
+  { name: "Frontend", arr: versionControl },
 ];

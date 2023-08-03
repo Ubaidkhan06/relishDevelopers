@@ -9,6 +9,7 @@ import {
   fromRight,
 } from "@/utils/framerAnimations";
 import {
+  arrTools,
   backend,
   database,
   devOps,
@@ -222,35 +223,28 @@ const About = () => {
       </div>
       {/* ------------------------------------------------------------------------------------ */}
       {/* section 5 */}
-      <div className="p-4 w-[93vw]">
+      <div className="p-4 w-[93vw] m-auto">
         <h1 className="text-4xl font-semibold text-center mt-6">
           Technologies we use
         </h1>
         <motion.div
           initial={"hidden"}
           whileInView={"visible"}
-          variants={framerContainer}
+          // variants={framerContainer}
           viewport={{ once: true }}
           className="flex flex-wrap gap-6 justify-evenly mt-8"
         >
-          <motion.div variants={framerItem}>
-            <TechSection tech={frontEnd} title={"Front End"} />
-          </motion.div>
-          <motion.div variants={framerItem}>
-            <TechSection tech={backend} title={"Back End"} />
-          </motion.div>
-          <motion.div variants={framerItem}>
-            <TechSection tech={database} title={"Database"} />
-          </motion.div>
-          <motion.div variants={framerItem}>
-            <TechSection tech={devOps} title={"Dev Ops"} />
-          </motion.div>
-          <motion.div variants={framerItem}>
-            <TechSection tech={projectManagementTools} title={"Tools"} />
-          </motion.div>
-          <motion.div variants={framerItem}>
-            <TechSection tech={versionControl} title={"Version Control"} />
-          </motion.div>
+          {arrTools?.map((ele, idx) => (
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.3, delay: idx / 10 + 0.2 }}
+              key={idx}
+            >
+              <TechSection tech={ele.arr} title={ele.name} />
+            </motion.div>
+          ))}
         </motion.div>
       </div>
     </div>

@@ -5,14 +5,20 @@ import Navbar from "@/components/Navbar";
 import { prisma } from "@/lib/prisma";
 
 const Blog = async ({ searchParams }) => {
+  
+  // !getting id from search params
   const id = searchParams?.id || null;
 
+  // !get all the values from the database
   const data = await prisma.blog.findMany();
+  
+  // !get single blog data according to id
   const indBlogData = await prisma.blog.findUnique({
     where: {
       id: id,
     },
   });
+
   return (
     <Navbar>
       <div className="flex flex-col w-full">

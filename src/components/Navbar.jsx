@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Calendly from "./Calendly";
 import NavbarItem from "./NavbarItem";
 
 const Navbar = ({ children }) => {
@@ -8,7 +9,7 @@ const Navbar = ({ children }) => {
       <div>
         <div className="drawer bg-base-100">
           <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-          <div className="drawer-content flex flex-col">
+          <div className="drawer-content flex flex-col w-screen">
             {/* Navbar */}
             <div className="w-full m-auto navbar bg-neutral lg:px-16 text-neutral-content">
               <div className="flex-none lg:hidden">
@@ -72,6 +73,7 @@ const Navbar = ({ children }) => {
               </div>
             </div>
             {/* Page content here */}
+            <Calendly />
             {children}
           </div>
           <div className="drawer-side">

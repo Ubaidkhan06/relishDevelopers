@@ -11,13 +11,17 @@ const Projects = () => {
     0: "warning",
     1: "error",
     2: "success",
-    3: "info",
+    3: "accent",
+    4: "info",
   };
 
-  const temp = `bg-gradient-to-br from-primaryBlue to-warning 
-  bg-gradient-to-br from-primaryBlue to-error 
-  bg-gradient-to-br from-primaryBlue to-info 
-  bg-gradient-to-br from-primaryBlue to-success`;
+  const temp = `
+  bg-gradient-to-br from-primary to-warning 
+  bg-gradient-to-br from-primary to-error 
+  bg-gradient-to-br from-primary to-info 
+  bg-gradient-to-br from-primary to-success
+  bg-gradient-to-br from-primary to-accent
+  `;
 
   return (
     <div className="bg-base-100">
@@ -39,7 +43,7 @@ const Projects = () => {
             <div className="lg:w-1/3 space-y-4" key={ele.name}>
               <div
                 key={ele.name}
-                className={`m-auto bg-gradient-to-br from-neutral to-${colors[idx]} py-8 p-6 flex justify-center 
+                className={`m-auto bg-gradient-to-br from-primary to-${colors[idx]} py-8 p-6 flex justify-center 
                 items-center lg:h-[350px] hover:-translate-y-3 transition-all ease-in-out duration-300`}
               >
                 <Image

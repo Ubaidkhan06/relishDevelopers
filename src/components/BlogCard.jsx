@@ -17,7 +17,10 @@ export const BlogCard = ({ data }) => {
   };
 
   return (
-    <Link href={`/blog?id=${data?.id}`}>
+    // <Link href={{
+    //   pathname : "/blog",
+    //   query : {id : data?.id}
+    // }}>
       <div className="lg:w-[400px]">
         <div className="max-w-[405px] max-h-[285px] overflow-hidden">
           <Image
@@ -32,7 +35,7 @@ export const BlogCard = ({ data }) => {
             alt="image"
             width={500}
             height={500}
-            class="w-full h-full object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
         <div className="flex flex-col justify-between h-[230px]">
@@ -73,6 +76,6 @@ export const BlogCard = ({ data }) => {
           </div>
         </div>
       </div>
-    </Link>
+    // </Link>
   );
 };

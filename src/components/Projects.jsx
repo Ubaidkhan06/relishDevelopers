@@ -2,67 +2,78 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import ProjectSection from "./ProjectSection";
+import { framerTransition, fromRight } from "@/utils/framerAnimations";
+import Image from "next/image";
 
 const Projects = () => {
   return (
     <>
-      <div className="bg-base-200 pb-8 pt-12">
-        <h1 className="text-4xl p-6 pt-8 flex justify-around items-center gap-24 text-center">
-          View Our Projects{" "}
-          <span className="text-xl flex items-center gap-4 hover:text-warning">
-            <Link href={"/projects"}>View all</Link>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-              />
-            </svg>
-          </span>
+      <div id="projects" className="bg-base-200 pb-8 pt-12 p-4">
+        <h1 className="text-5xl md:flex md:justify-center md:gap-48  md:items-center font-semibold p-6 pt-8 text-center">
+          Our Work
+          <div className="text-lg font-light hover:text-warning">
+            <Link href={"/projects"}>View all &#8594;</Link>
+          </div>
         </h1>
         <motion.div
-          initial={{ opacity: 0, x: 200 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.5, duration: 0.3 }}
+          initial={fromRight.initial}
+          whileInView={fromRight.animate}
+          transition={framerTransition}
           viewport={{ once: true }}
           className="flex flex-col lg:flex-row justify-center gap-8 items-center"
         >
-          <ProjectSection
-          full
-            image={"/images/Biovatika/1.png"}
-            size={600}
-            name={"BioVatika"}
-            description={"An Ecommerce website that sells beauty products."}
-          />
-          <div className="flex flex-col gap-8">
-            <div className="hidden lg:block">
-              <ProjectSection
-                image={"/images/BDRM/2.png"}
-                size={300}
-                name={"Khonsu"}
-                
+          <div className="block md:hidden w-full space-y-6">
+            <Image
+              src={"/images/BDRM/1.webp"}
+              width={300}
+              height={300}
+              alt="BDRM"
+              className="h-full w-full object-contain"
+            />
+            <Image
+              src={"/images/Khonshu/1.webp"}
+              width={300}
+              height={300}
+              alt="BDRM"
+              className="h-full w-full object-contain"
+            />
+            <Image
+              src={"/images/Listen2Re/1.webp"}
+              width={300}
+              height={300}
+              alt="BDRM"
+              className="h-full w-full object-contain"
+            />
+          </div>
+          <div className="hidden md:flex flex-col md:flex-row justify-center gap-2 h-[500px] w-full p-4">
+            <div className="cursor-pointer">
+              <Image
+                src={"/images/BDRM/1.webp"}
+                width={500}
+                height={500}
+                alt="BDRM"
+                className="h-full w-full object-contain"
               />
             </div>
-            <div className="lg:hidden">
-              <ProjectSection
-                image={"/images/BDRM/2.png"}
-                size={500}
-                name={"BDRM"}
-              />
-            </div>
-            <div>
-              <ProjectSection
-                image={"/images/BDRM/1.png"}
-                size={300}
-                name={"BDRM"}
-              />
+            <div className="flex flex-col justify-between">
+              <div className=" w-full md:h-2/5 cursor-pointer">
+                <Image
+                  src={"/images/Listen2Re/1.webp"}
+                  width={500}
+                  height={500}
+                  alt="BDRM"
+                  className="h-full w-full"
+                />
+              </div>
+              <div className=" w-full md:h-2/5 cursor-pointer">
+                <Image
+                  src={"/images/Khonshu/1.webp"}
+                  width={500}
+                  height={500}
+                  alt="BDRM"
+                  className="h-full w-full"
+                />
+              </div>
             </div>
           </div>
         </motion.div>

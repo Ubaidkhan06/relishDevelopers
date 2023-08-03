@@ -2,16 +2,15 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { services } from "@/utils/constants";
-import { framerContainer, framerItem } from "@/utils/framerAnimations";
 
 const Services = () => {
   return (
     <>
       <div
         id="services"
-        className="p-4 bg-gradient-to-b from-base-100 to-base-200 py-28"
+        className="p-4 bg-base-200 mt-12 pb-52"
       >
-        <h1 className="text-center text-3xl lg:mt-16 lg:text-5xl my-2">
+        <h1 className="text-center font-light text-5xl lg:mt-16 lg:text-5xl my-2">
           Services that solve problems.
         </h1>
         <motion.div

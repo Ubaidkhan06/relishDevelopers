@@ -6,11 +6,11 @@ import Link from "next/link";
 
 const ProjectSection = ({ name, image, size, description, full }) => {
   const [show, setShow] = useState(false);
-    const temp = "w-full"
+  const temp = "w-full";
   return (
     <>
       <div
-        className="relative shadow-2xl rounded-3xl transition-all duration-300 ease-linear mx-8 mr-10 lg:m-0"
+        className="relative shadow-2xl rounded-3xl transition-all duration-300 ease-linear"
         onMouseEnter={(e) => setShow(true)}
         onMouseLeave={(e) => setShow(false)}
       >
@@ -19,7 +19,7 @@ const ProjectSection = ({ name, image, size, description, full }) => {
           whileInView={{ opacity: 1 }}
           className={`absolute rounded-3xl text-neutral-content ${
             show ? "w-1/2 bg-opacity-75" : "w-0 bg-opacity-0 text-opacity-0"
-          } justify-center pl-4 items-center h-full
+          } justify-center items-center h-full
              bg-neutral  transition-all transform ease-in-out 
              duration-300 top-0 left-0  
              font-extrabold`}
@@ -46,13 +46,15 @@ const ProjectSection = ({ name, image, size, description, full }) => {
             </Link>
           </div>
         </motion.div>
-        <Image
-          src={image}
-          width={size}
-          height={size}
-          alt="image"
-          className="object-contain w-full h-full rounded-3xl"
-        />
+        <div>
+          <Image
+            src={image}
+            width={size}
+            height={size}
+            alt="image"
+            className="object-contain w-full h-full rounded-3xl"
+          />
+        </div>
       </div>
     </>
   );
