@@ -363,9 +363,9 @@ export const faqData = [
 
 export const arrTools = [
   { name: "Frontend", arr: frontEnd },
-  { name: "Frontend", arr: backend },
-  { name: "Frontend", arr: database },
-  { name: "Frontend", arr: devOps },
-  { name: "Frontend", arr: projectManagementTools },
-  { name: "Frontend", arr: versionControl },
+  { name: "Backend", arr: backend },
+  { name: "Database", arr: database },
+  { name: "Devops", arr: devOps },
+  { name: "Project Management", arr: projectManagementTools },
+  { name: "Version Control", arr: versionControl },
 ];

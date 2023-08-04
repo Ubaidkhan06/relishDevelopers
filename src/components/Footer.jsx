@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -13,23 +14,26 @@ const Footer = () => {
       </div>
       <div className="">
         <span className="footer-title">Services</span>
-        <a className="link link-hover">Web Development</a>
-        <a className="link link-hover">UI/UX design</a>
-        <a className="link link-hover">Python Scripting</a>
-        <a className="link link-hover">MVP Building</a>
+        <a className="">Web Development</a>
+        <a className="">UI/UX design</a>
+        <a className="">Python Scripting</a>
+        <a className="">MVP Building</a>
       </div>
       <div>
         <span className="footer-title">Company</span>
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
+        <a href="#about" className="link link-hover">
+          About us
+        </a>
+        <a href="#contact" className="link link-hover">
+          Contact
+        </a>
+        <a href="#projects" className="link link-hover">
+          Projects
+        </a>
       </div>
       <div>
         <span className="footer-title">Legal</span>
-        <a className="link link-hover">Terms of use</a>
-        <a className="link link-hover">Privacy policy</a>
-        <a className="link link-hover">Cookie policy</a>
+        <Link href={"/privacypolicy"} className="link link-hover">Privacy policy</Link>
       </div>
     </footer>
   );

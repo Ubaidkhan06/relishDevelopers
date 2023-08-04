@@ -12,7 +12,7 @@ import Testimonials from "@/components/Testimonials";
 import { prisma } from "@/lib/prisma";
 
 export default async function Home() {
-  const blogs = await prisma?.blog?.findMany();
+  const blogs = await prisma?.blogs?.findMany();
 
   // console.log(blogs);
 

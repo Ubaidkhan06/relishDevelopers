@@ -1,11 +1,12 @@
 import { sidebarItems } from "@/utils/constants";
+import Link from "next/link";
 
 const NavbarItem = () => {
   return (
     <>
       {sidebarItems?.map((item) => (
         <li className="text-sm" key={item}>
-          <a href={`#${item.toLowerCase()}`}>{item}</a>
+          <Link href={item == "Home"  ? "/" : `/#${item.toLowerCase()}`}>{item}</Link>
         </li>
       ))}
     </>

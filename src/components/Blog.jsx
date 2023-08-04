@@ -6,7 +6,7 @@ export const Blog = ({ blogs }) => {
   return (
     <div
       id="blog"
-      className="bg-base-100 text-base-content p-6 px-16 w-screen flex flex-col items-center"
+      className="bg-base-100 text-base-content p-6 px-32 w-screen flex flex-col items-center"
     >
       <div className="py-6 text-xl leading-relaxed">
         <h1 className="text-center text-3xl lg:text-5xl my-2">Our Blog</h1>

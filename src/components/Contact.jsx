@@ -32,14 +32,13 @@ const Contact = () => {
     }
   };
 
-  console.log(new Date().toLocaleDateString());
 
   return (
     <>
       <h1 className="text-5xl text-center mt-16">Contact Us</h1>
       <div
         id="contact"
-        className="flex flex-col md:flex-row shadow-2xl rounded-3xl bg-base-200 m-6 md:m-12 mb-28"
+        className="flex flex-col md:flex-row shadow-2xl rounded-3xl bg-base-200 m-6 md:m-12 md:mx-28 mb-28"
       >
         <div className="md:w-2/4 w-full">
           <Image
@@ -87,7 +86,7 @@ const Contact = () => {
             onChange={handleChange}
             className="textarea textarea-primary w-full"
           />
-          <button type="submit" className="btn btn-info">
+          <button type="submit" className="btn btn-success">
             Submit
           </button>
         </form>

@@ -71,7 +71,7 @@ const About = () => {
             transition={framerTransition}
             className="lg:w-1/2"
           >
-            <h1 className="text-2xl text-center lg:text-left">Who we are</h1>
+            <h1 className="text-2xl font-sans italic underline-offset-2 underline text-success text-center lg:text-left">Who we are</h1>
             <h1 className="text-3xl my-4 font-semibold text-center lg:text-left">
               Goal Focused
             </h1>
@@ -155,7 +155,7 @@ const About = () => {
       </div>
       {/* section4 */}
       <div className="bg-base-200 p-4 mt-24 w-[90vw] m-auto">
-        <div className="lg:flex lg:justify-between">
+        <div className=" lg:flex lg:justify-between">
           <motion.div
             initial={fromLeft.initial}
             whileInView={fromLeft.animate}
@@ -163,7 +163,7 @@ const About = () => {
             transition={framerTransition}
             className="space-y-4 "
           >
-            <h1 className="text-2xl">Our Mission</h1>
+            <h1 className="text-2xl text-success underline underline-offset-2 italic">Our Mission</h1>
             <h1 className="text-3xl font-semibold">Inspire, Innovate, Share</h1>
             <p className="lg:w-[600px] text-xl md:text-2xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
@@ -187,7 +187,7 @@ const About = () => {
             />
           </motion.div>
         </div>
-        <div className="lg:flex lg:flex-row-reverse lg:justify-between">
+        <div className="mt-8 lg:flex lg:flex-row-reverse lg:justify-between">
           <motion.div
             initial={{ opacity: 0, x: 200 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -195,7 +195,7 @@ const About = () => {
             viewport={{ once: true }}
             className="space-y-4 "
           >
-            <h1 className="text-2xl">Our Vision</h1>
+            <h1 className="text-2xl text-success underline underline-offset-2 italic">Our Vision</h1>
             <h1 className="text-3xl font-semibold">Laser Focus</h1>
             <p className="lg:w-[600px] text-xl lg:text-2xl md:text-2xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit

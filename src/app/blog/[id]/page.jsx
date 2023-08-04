@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import { prisma } from "@/lib/prisma";
 
 const IndividualBlog = async ({ params: { id } }) => {
-  const blogData = await prisma.blog.findUnique({
+  const blogData = await prisma.blogs.findUnique({
     where: {
       id: id,
     },

@@ -37,7 +37,7 @@ const IndividualProject = ({ params: { slug } }) => {
         <h1 className="text-2xl">Web design and development</h1>
         <h1 className="text-4xl">{data?.name}</h1>
         <p className="text-lg">{data?.about}</p>
-        <div className="bg-gradient-to-br from-warning h-max to-error p-8">
+        <div className="bg-gradient-to-br from-warning h-max to-error p-4">
           <Carousel
             data={data?.images}
             renderComponent={(data) => (

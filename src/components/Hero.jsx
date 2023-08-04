@@ -7,9 +7,9 @@ import {
   fromLeft,
   fromRight,
 } from "@/utils/framerAnimations";
+import Link from "next/link";
 
 const Hero = () => {
-
   const [text, setText] = useState("");
   const [fullText, setFullText] = useState(
     "Building Stellar website for early startups"
@@ -34,7 +34,7 @@ const Hero = () => {
             whileInView={fromRight.animate}
             transition={framerTransition}
             viewport={{ once: true }}
-            whileHover={{translateY : -30}}
+            whileHover={{ translateY: -30 }}
           >
             <Image
               src={"/images/planning.svg"}
@@ -64,7 +64,7 @@ const Hero = () => {
               viewport={{ once: true }}
               className="btn btn-success btn-block lg:btn-wide"
             >
-              Get Started{" "}
+              <Link href={"#contact"}>Get Started </Link>
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +85,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
     </>
   );
 };

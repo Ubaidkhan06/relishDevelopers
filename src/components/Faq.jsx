@@ -3,7 +3,7 @@ import Accordion from "./Accordion";
 const FAQ = () => {
   return (
     <>
-      <div className="bg-base-200 flex flex-col lg:flex-row  p-4 lg:p-16 ">
+      <div className="bg-base-200 flex justify-center items-center flex-col lg:flex-row  p-4 lg:p-16 ">
         <div className="lg:w-[35vw]">
           <h1 className="text-3xl text-center lg:text-left lg:text-5xl">
             Frequently asked questions
