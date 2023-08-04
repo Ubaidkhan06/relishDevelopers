@@ -8,7 +8,7 @@ const Accordion = () => {
             <input type="radio" name="my-accordion-2" />
 
             <div className="collapse-title text-2xl font-medium">
-              <span className="text-info font-semibold">
+              <span className="text-success font-semibold">
                 0{idx + 1}. {"    "}
               </span>
               {ele.question}

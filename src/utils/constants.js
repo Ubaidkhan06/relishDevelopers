@@ -1,4 +1,4 @@
-export const sidebarItems = ["Home", "About", "Services", "Projects" ,"Blog", "Contact Us"];
+export const sidebarItems = ["Home", "About", "Services", "Projects" ,"Blog", "Contact"];
 export const howWeWork = [
   {
     name: "Strategy",
