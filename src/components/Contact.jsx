@@ -19,7 +19,7 @@ const Contact = () => {
     e.preventDefault();
     // Add your form submission logic here
     try {
-      const res = await axios.post("http://localhost:3000/api/contact", {
+      const res = await axios.post("/api/contact", {
         ...formData,
       });
 
@@ -31,6 +31,8 @@ const Contact = () => {
       console.log(err);
     }
   };
+
+  console.log(new Date().toLocaleDateString());
 
   return (
     <>
