@@ -60,7 +60,7 @@ const Projects = () => {
                 Dignissimos id rerum illo quas asperiores nobis ducimus.
               </p>
               <Link href={`/projects/${ele.name.toLowerCase()}`}>
-                <button className="btn btn-info btn-sm mt-2">
+                <button className="btn btn-primary p-0 btn-link btn-sm mt-2">
                   View Portfolio
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
