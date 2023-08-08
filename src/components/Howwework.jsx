@@ -32,7 +32,7 @@ const Howwework = () => {
             corporis harum deserunt reiciendis aliquam atque illum tempora?
             Libero, nisi inventore.
           </p>
-          <button className="btn btn-success btn-block">
+          <button className="btn btn-warning text-primary btn-block">
             Get in touch
             <span>
               <svg

@@ -35,7 +35,7 @@ const Contact = () => {
 
   return (
     <>
-      <h1 className="text-5xl text-center mt-16">Contact Us</h1>
+      <h1 className="text-5xl font-semibold text-center mt-16">Contact Us</h1>
       <div
         id="contact"
         className="flex flex-col md:flex-row shadow-2xl rounded-3xl bg-base-200 m-6 md:m-12 md:mx-28 mb-28"
@@ -59,7 +59,7 @@ const Contact = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="input input-primary w-full"
+            className="input input-primary w-full bg-base-200"
           />
           <input
             type="number"
@@ -67,7 +67,7 @@ const Contact = () => {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="input input-primary w-full"
+            className="input input-primary w-full bg-base-200"
           />
           <input
             type="email"
@@ -75,7 +75,7 @@ const Contact = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="input input-primary w-full"
+            className="input input-primary w-full bg-base-200"
           />
           <textarea
             rows={"3"}
@@ -84,9 +84,9 @@ const Contact = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="textarea textarea-primary w-full"
+            className="textarea textarea-primary w-full bg-base-200 placeholder:text-base"
           />
-          <button type="submit" className="btn btn-success">
+          <button type="submit" className="btn btn-warning text-primary">
             Submit
           </button>
         </form>

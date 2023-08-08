@@ -3,37 +3,37 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="footer p-10 bg-neutral text-neutral-content">
-      <div className="flex flex-col items-center justify-center">
-        <Image src={"/images/logo2.webp"} width={150} height={150} alt="img" />
-        <p>
+    <footer className="footer p-10 bg-neutral text-neutral-content pb-24">
+      <Link href={"/"} className="flex flex-col items-center justify-center">
+        <Image src={"/images/logo3.svg"} width={150} height={150} alt="img" className="" />
+        <p className="text-center">
           Relish Development Solutions
           <br />
           Providing reliable tech since 2018
         </p>
-      </div>
+      </Link>
       <div className="">
         <span className="footer-title">Services</span>
-        <a className="">Web Development</a>
-        <a className="">UI/UX design</a>
-        <a className="">Python Scripting</a>
-        <a className="">MVP Building</a>
+        <a className="capitalize">Web Development</a>
+        <a className="capitalize">UI/UX design</a>
+        <a className="capitalize">Python Scripting</a>
+        <a className="capitalize">MVP Building</a>
       </div>
       <div>
         <span className="footer-title">Company</span>
-        <a href="#about" className="link link-hover">
+        <a href="#about" className="link link-hover capitalize">
           About us
         </a>
-        <a href="#contact" className="link link-hover">
+        <a href="#contact" className="link link-hover capitalize">
           Contact
         </a>
-        <a href="#projects" className="link link-hover">
+        <a href="#projects" className="link link-hover capitalize">
           Projects
         </a>
       </div>
       <div>
         <span className="footer-title">Legal</span>
-        <Link href={"/privacypolicy"} className="link link-hover">
+        <Link href={"/privacypolicy"} className="link link-hover capitalize">
           Privacy policy
         </Link>
       </div>
@@ -57,9 +57,9 @@ const Footer = () => {
             href={"https://www.linkedin.com/company/relishdevelopers/"}
           >
             <Image
-              src={"/images/lin.svg"}
-              width={50}
-              height={50}
+              src={"/images/linkedin.svg"}
+              width={40}
+              height={40}
               alt="linkedin"
             />
           </Link>
@@ -70,15 +70,15 @@ const Footer = () => {
             }
           >
             <Image
-              src={"/images/insta1.svg"}
-              width={50}
-              height={50}
+              src={"/images/insta.svg"}
+              width={40}
+              height={40}
               alt="linkedin"
             />
           </Link>
           <Link href={"https://www.facebook.com"} target="_blank">
             <Image
-              src={"/images/fb1.svg"}
+              src={"/images/fb.svg"}
               width={40}
               height={40}
               alt="linkedin"

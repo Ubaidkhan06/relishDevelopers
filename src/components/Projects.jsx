@@ -7,12 +7,12 @@ import Image from "next/image";
 const Projects = () => {
   return (
     <>
-      <div id="projects" className="bg-base-200 pb-8 pt-12 p-4">
-        <h1 className="text-5xl md:flex md:justify-center md:gap-48  md:items-center font-semibold p-6 pt-8 text-center">
+      <div id="projects" className="bg-base-200 py-12 p-4">
+        <h1
+          className="text-5xl md:flex md:justify-center md:gap-48  
+        md:items-center font-semibold p-6 pt-8 text-center"
+        >
           Our Work
-          <div className="text-lg font-light hover:text-warning">
-            <Link href={"/projects"}>View all &#8594;</Link>
-          </div>
         </h1>
         <motion.div
           initial={fromRight.initial}
@@ -88,6 +88,9 @@ const Projects = () => {
             </div>
           </div>
         </motion.div>
+        <div className="text-3xl text-secondary text-center pt-8 font-semibold hover:text-warning">
+          <Link href={"/projects"}>View all &#8594;</Link>
+        </div>
       </div>
     </>
   );

@@ -9,7 +9,7 @@ export const Blog = ({ blogs }) => {
       className="bg-base-100 text-base-content p-6 md:px-32 w-screen flex flex-col items-center"
     >
       <div className="py-6 text-xl leading-relaxed">
-        <h1 className="text-center text-3xl lg:text-5xl my-2">Our Blog</h1>
+        <h1 className="text-center text-xl font-semibold lg:text-5xl my-2">Our Blog</h1>
       </div>
 
       <div className="w-full p-2">

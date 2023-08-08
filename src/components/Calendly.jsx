@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { PopupWidget } from "react-calendly";
+import { PopupWidget, PopupButton } from "react-calendly";
 
-const Calendly = () => {
+const Calendly = ({ button }) => {
   const [elem, setElem] = useState();
 
   useEffect(() => {
@@ -14,13 +14,20 @@ const Calendly = () => {
   return (
     <>
       <div className="z-50">
-        {!elem ? null : (
+        {!elem ? null : !button ? (
           <PopupWidget
-          
             text={"Schedule Call with us "}
-            color={"#56DCA4"}
+            color={"#FFDE8A"}
             rootElement={elem}
-            textColor={"#000"}
+            textColor={"#014E4E"}
+            url="https://calendly.com/prajjwal-relish/idea-discussion"
+          />
+        ) : (
+          <PopupButton
+            text={"Book A Consultation Call  -->"}
+            color={"#FFDE8A"}
+            rootElement={elem}
+            textColor={"#014E4E"}
             url="https://calendly.com/prajjwal-relish/idea-discussion"
           />
         )}

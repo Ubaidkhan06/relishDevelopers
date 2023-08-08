@@ -3,22 +3,22 @@ export const howWeWork = [
   {
     name: "Strategy",
     desc: "Our IT consulting services are tailored to align your technology strategy with your business objectives",
-    image: "/images/pointer1.svg",
+    image: "/images/pointer12.svg",
   },
   {
     name: "Wireframing",
     desc: "Wireframing enables efficient planning, communication, and validation of design concepts.",
-    image: "/images/pointer2.svg",
+    image: "/images/pointer21.svg",
   },
   {
     name: "Design",
     desc: "Our IT consulting services are tailored to align your technology strategy with your business objectives",
-    image: "/images/pointer3.svg",
+    image: "/images/pointer31.svg",
   },
   {
     name: "Development",
     desc: "Our IT consulting services are tailored to align your technology strategy with your business objectives",
-    image: "/images/pointer4.svg",
+    image: "/images/pointer41.svg",
   },
 ];
 

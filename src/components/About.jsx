@@ -71,7 +71,7 @@ const About = () => {
             transition={framerTransition}
             className="lg:w-1/2"
           >
-            <h1 className="text-2xl font-sans italic underline-offset-2 underline text-success text-center lg:text-left">Who we are</h1>
+            <h1 className="text-2xl font-sans italic underline-offset-2 underline text-secondary text-center lg:text-left">Who we are</h1>
             <h1 className="text-3xl my-4 font-semibold text-center lg:text-left">
               Goal Focused
             </h1>
@@ -163,7 +163,7 @@ const About = () => {
             transition={framerTransition}
             className="space-y-4 "
           >
-            <h1 className="text-2xl text-success underline underline-offset-2 italic">Our Mission</h1>
+            <h1 className="text-2xl text-secondary underline italic">Our Mission</h1>
             <h1 className="text-3xl font-semibold">Inspire, Innovate, Share</h1>
             <p className="lg:w-[600px] text-xl md:text-2xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
@@ -195,7 +195,7 @@ const About = () => {
             viewport={{ once: true }}
             className="space-y-4 "
           >
-            <h1 className="text-2xl text-success underline underline-offset-2 italic">Our Vision</h1>
+            <h1 className="text-2xl text-secondary underline underline-offset-2 italic">Our Vision</h1>
             <h1 className="text-3xl font-semibold">Laser Focus</h1>
             <p className="lg:w-[600px] text-xl lg:text-2xl md:text-2xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
@@ -224,7 +224,7 @@ const About = () => {
       {/* ------------------------------------------------------------------------------------ */}
       {/* section 5 */}
       <div className="p-4 w-[93vw] m-auto">
-        <h1 className="text-4xl font-semibold text-center mt-6">
+        <h1 className="text-5xl font-semibold text-center mt-6">
           Technologies we use
         </h1>
         <motion.div

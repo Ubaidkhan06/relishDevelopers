@@ -8,6 +8,7 @@ import {
   fromRight,
 } from "@/utils/framerAnimations";
 import Link from "next/link";
+import Calendly from "./Calendly";
 
 const Hero = () => {
   const [text, setText] = useState("");
@@ -41,7 +42,7 @@ const Hero = () => {
               width={700}
               height={700}
               alt="hero-image"
-              className=" rounded-lg shadow-2xl"
+              className="rounded-2xl shadow-xl"
             />
           </motion.div>
           <div>
@@ -62,9 +63,9 @@ const Hero = () => {
               animate={fromLeft.animate}
               transition={framerTransition}
               viewport={{ once: true }}
-              className="btn btn-success btn-block lg:btn-wide"
+              className="btn btn-warning flex text-primary btn-block lg:w-fit"
             >
-              <Link href={"#contact"}>Get Started </Link>
+              {/* <Link  href={"#contact"}>Book a consultation call</Link>
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +81,8 @@ const Hero = () => {
                     d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                   />
                 </svg>
-              </span>
+              </span> */}
+              <Calendly button />
             </motion.button>
           </div>
         </div>

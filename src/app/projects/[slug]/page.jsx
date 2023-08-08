@@ -37,9 +37,10 @@ const IndividualProject = ({ params: { slug } }) => {
         <h1 className="text-2xl">Web design and development</h1>
         <h1 className="text-4xl">{data?.name}</h1>
         <p className="text-lg">{data?.about}</p>
-        <div className="bg-gradient-to-br from-warning h-max to-error p-4">
+        <div className="bg-gradient-to-br from-[#fff1eb] h-max to-[#ace0f9] p-4">
           <Carousel
             data={data?.images}
+            // withButton
             renderComponent={(data) => (
               <Image
                 src={data}
@@ -54,16 +55,16 @@ const IndividualProject = ({ params: { slug } }) => {
 
         <div className="lg:flex-row flex flex-wrap text-center gap-6 lg:text-left justify-around">
           <div>
-            <h1 className="text-3xl">Client</h1>
-            <h3 className="text-xl">XYZ</h3>
+            <h1 className="text-xl">Client</h1>
+            <h3 className="text-3xl">XYZ</h3>
           </div>
           <div>
-            <h1 className="text-3xl">Service</h1>
-            <h3 className="text-xl">Product Design</h3>
+            <h1 className="text-xl">Service</h1>
+            <h3 className="text-3xl">Product Design</h3>
           </div>
           <div>
-            <h1 className="text-3xl">Deliverable</h1>
-            <h3 className="text-xl">UI Screens, UX Flow & Prototype</h3>
+            <h1 className="text-xl">Deliverable</h1>
+            <h3 className="text-3xl">UI Screens, UX Flow & Prototype</h3>
           </div>
         </div>
         <hr />
