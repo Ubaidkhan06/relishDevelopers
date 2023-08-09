@@ -3,7 +3,9 @@ import Image from "next/image";
 const TechSection = ({ tech, title }) => {
   return (
     <div className=" p-4 ">
-      <h1 className="text-center text-3xl">{title}</h1>
+      <h1 style={{ fontSize: "28px" }} className="text-center">
+        {title}
+      </h1>
       <div className="flex gap-2 flex-wrap justify-center mt-4">
         {tech?.map((ele) => (
           <div

@@ -44,7 +44,7 @@ const About = () => {
           transition={framerTransition}
         >
           <Image
-            src={"/images/aboutus.webp"}
+            src={"/images/about-us.webp"}
             width={500}
             height={500}
             alt="image"
@@ -52,11 +52,10 @@ const About = () => {
         </motion.div>
       </div>
 
-
       {/* --------------------------------------------------------------------------------------- */}
       {/* section2 */}
-      <div className="bg-base-200 w-[93vw] m-auto">
-        <div className="lg:flex lg:gap-4 lg:items-center p-4">
+      <div className="bg-base-200 w-screen space-y-6 px-14 py-12">
+        <div className="lg:flex lg:gap-4 lg:items-center">
           <motion.div
             initial={fromLeft.initial}
             whileInView={fromLeft.animate}
@@ -103,16 +102,15 @@ const About = () => {
           className="w-full"
         >
           <Image
-            src={"/images/about2.webp"}
+            src={"/images/who-we-are.webp"}
             width={1000}
-            height={500}
+            height={1000}
             alt="image"
-            className="mt-2 w-full object-cover"
+            className="mt-2 w-full h-96 object-cover"
           />
         </motion.div>
       </div>
       {/* --------------------------------------------------------------------------------------- */}
-
 
       {/* section3 */}
       <div className="w-[90vw] py-20 m-auto">
@@ -121,7 +119,8 @@ const About = () => {
           whileInView={fromRight.animate}
           viewport={{ once: true }}
           transition={framerTransition}
-          className="text-4xl font-semibold text-center"
+          style={{ fontSize: "42px" }}
+          className="font-medium text-center"
         >
           The Process we follow
         </motion.h1>
@@ -151,7 +150,6 @@ const About = () => {
         {/* ------------------------------------------------------------------------------------ */}
       </div>
 
-
       {/* section4 */}
       <div className="bg-base-200 mt-24 w-screen p-4 lg:px-20 lg:py-20">
         <div className=" lg:flex space-x-4 lg:justify-between">
@@ -178,7 +176,7 @@ const About = () => {
             transition={framerTransition}
           >
             <Image
-              src={"/images/about3.webp"}
+              src={"/images/our-mission.webp"}
               width={500}
               height={500}
               alt="image"
@@ -213,7 +211,7 @@ const About = () => {
             className="w-full lg:w-[500px] lg:h-auto"
           >
             <Image
-              src={"/images/about4.webp"}
+              src={"/images/our-vision.webp"}
               width={500}
               height={500}
               alt="image"
@@ -222,12 +220,13 @@ const About = () => {
           </motion.div>
         </div>
       </div>
-
-
       {/* ------------------------------------------------------------------------------------ */}
       {/* section 5 */}
       <div className="p-4 w-[93vw] m-auto">
-        <h1 className="text-5xl font-semibold text-center mt-6">
+        <h1
+          style={{ fontSize: "42px" }}
+          className="font-medium text-center mt-6"
+        >
           Technologies we use
         </h1>
         <motion.div
@@ -250,8 +249,6 @@ const About = () => {
           ))}
         </motion.div>
       </div>
-
-
     </div>
   );
 };

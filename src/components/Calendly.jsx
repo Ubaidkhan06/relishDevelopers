@@ -16,7 +16,7 @@ const Calendly = ({ button }) => {
       <div className="z-50">
         {!elem ? null : !button ? (
           <PopupWidget
-            text={"Schedule Call with us "}
+            text={"Schedule Call With Us "}
             color={"#FFDE8A"}
             rootElement={elem}
             textColor={"#014E4E"}

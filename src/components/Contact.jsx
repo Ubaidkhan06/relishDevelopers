@@ -35,14 +35,14 @@ const Contact = () => {
 
   return (
     <>
-      <h1 className="text-5xl font-semibold text-center mt-16">Contact Us</h1>
+      <h1 style={{fontSize : "42px"}} className="font-medium text-center mt-16">Contact Us</h1>
       <div
         id="contact"
         className="flex flex-col md:flex-row shadow-2xl rounded-3xl bg-base-200 m-6 md:m-12 md:mx-28 mb-28"
       >
         <div className="md:w-2/4 w-full">
           <Image
-            src={"/images/contact.svg"}
+            src={"/images/contact-us-1.webp"}
             width={500}
             height={500}
             alt="image"
