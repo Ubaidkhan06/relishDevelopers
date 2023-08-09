@@ -52,6 +52,7 @@ const Navbar = ({ children }) => {
                     height={70}
                     alt="Relish Logo"
                     className="mr-8"
+                    priority
                   />
                 </Link>
                 Relish

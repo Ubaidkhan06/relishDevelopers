@@ -43,6 +43,7 @@ const Hero = () => {
               height={700}
               alt="hero-image"
               className="rounded-2xl shadow-xl"
+              priority
             />
           </motion.div>
           <div>
