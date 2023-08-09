@@ -33,7 +33,7 @@ const IndividualProject = ({ params: { slug } }) => {
 
   return (
     <Navbar>
-      <div className="bg-base-100 p-6 lg:p-16 space-y-6">
+      <div className="bg-base-100 p-6 lg:p-14 space-y-6">
         <h1 className="text-2xl">Web design and development</h1>
         <h1 className="text-4xl">{data?.name}</h1>
         <p className="text-lg">{data?.about}</p>
@@ -56,15 +56,15 @@ const IndividualProject = ({ params: { slug } }) => {
         <div className="lg:flex-row flex flex-wrap text-center gap-6 lg:text-left justify-around">
           <div>
             <h1 className="text-xl">Client</h1>
-            <h3 className="text-3xl">XYZ</h3>
+            <h3 className="text-2xl">XYZ</h3>
           </div>
           <div>
             <h1 className="text-xl">Service</h1>
-            <h3 className="text-3xl">Product Design</h3>
+            <h3 className="text-2xl">Product Design</h3>
           </div>
           <div>
             <h1 className="text-xl">Deliverable</h1>
-            <h3 className="text-3xl">UI Screens, UX Flow & Prototype</h3>
+            <h3 className="text-2xl">UI Screens, UX Flow & Prototype</h3>
           </div>
         </div>
         <hr />

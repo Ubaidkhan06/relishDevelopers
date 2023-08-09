@@ -8,12 +8,15 @@ const Projects = () => {
   return (
     <>
       <div id="projects" className="bg-base-200 py-12 p-4">
-        <h1
-          className="text-5xl md:flex md:justify-center md:gap-48  
-        md:items-center font-semibold p-6 pt-8 text-center"
-        >
-          Our Work
-        </h1>
+        <div className="flex items-baseline gap-52 justify-around">
+          <h1
+            style={{ fontSize: "42px" }}
+            className="text-4xl font-medium p-6 pt-8 text-center"
+          >
+            Our Work
+          </h1>
+          <Link href={"/projects"} className="text-2xl btn btn-link hidden lg:block">View All &#8594;</Link>
+        </div>
         <motion.div
           initial={fromRight.initial}
           whileInView={fromRight.animate}
@@ -88,7 +91,7 @@ const Projects = () => {
             </div>
           </div>
         </motion.div>
-        <div className="text-3xl text-secondary text-center pt-8 font-semibold hover:text-warning">
+        <div className="btn btn-link w-full flex justify-center items-center text-2xl lg:hidden">
           <Link href={"/projects"}>View all &#8594;</Link>
         </div>
       </div>

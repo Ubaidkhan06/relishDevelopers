@@ -57,7 +57,7 @@ const Footer = () => {
             href={"https://www.linkedin.com/company/relishdevelopers/"}
           >
             <Image
-              src={"/images/linkedin.svg"}
+              src={"/images/linkedin.png"}
               width={40}
               height={40}
               alt="linkedin"
@@ -70,7 +70,7 @@ const Footer = () => {
             }
           >
             <Image
-              src={"/images/insta.svg"}
+              src={"/images/instagram.png"}
               width={40}
               height={40}
               alt="linkedin"
@@ -78,7 +78,7 @@ const Footer = () => {
           </Link>
           <Link href={"https://www.facebook.com"} target="_blank">
             <Image
-              src={"/images/fb.svg"}
+              src={"/images/facebook.png"}
               width={40}
               height={40}
               alt="linkedin"

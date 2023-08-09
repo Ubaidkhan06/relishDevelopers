@@ -4,22 +4,25 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/navigation";
 import SwiperButtonNext from "./UI/SwiperButtonNext";
 import SwiperButtonPrevious from "./UI/SwiperButtonPrevious";
 
-const Carousel = ({ data, renderComponent, size, withButton, loop }) => {
+
+const Carousel = ({ data, renderComponent, size, withButton, loop, }) => {
   const swiper = useSwiper();
 
   return (
     <Swiper
       spaceBetween={30}
       slidesPerView={"auto"}
-      modules={[Autoplay]}
-      navigation 
-      // autoplay={{
-      //   delay: 2000,
-      //   disableOnInteraction: false,
-      // }}
+      modules={[Autoplay, Navigation]}
+      navigation={!withButton}
+      autoplay={{
+        delay: 1500,
+        disableOnInteraction: false,
+      }}
       loop={loop}
     >
       {data?.map((item, idx) => (

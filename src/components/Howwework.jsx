@@ -10,6 +10,7 @@ import {
   fromRight,
 } from "@/utils/framerAnimations";
 import HowweworkItem from "./HowweworkItem";
+import Link from "next/link";
 
 const Howwework = () => {
   return (
@@ -32,7 +33,7 @@ const Howwework = () => {
             corporis harum deserunt reiciendis aliquam atque illum tempora?
             Libero, nisi inventore.
           </p>
-          <button className="btn btn-warning text-primary btn-block">
+          <Link href={"#contact"} className="btn btn-warning text-primary btn-block hover:bg-[#ffd15e]">
             Get in touch
             <span>
               <svg
@@ -50,7 +51,7 @@ const Howwework = () => {
                 />
               </svg>
             </span>
-          </button>
+          </Link>
         </motion.div>
         <motion.div
           initial={"hidden"}

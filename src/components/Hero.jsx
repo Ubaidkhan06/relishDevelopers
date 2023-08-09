@@ -63,7 +63,7 @@ const Hero = () => {
               animate={fromLeft.animate}
               transition={framerTransition}
               viewport={{ once: true }}
-              className="btn btn-warning flex text-primary btn-block lg:w-fit"
+              className="btn btn-warning flex text-primary btn-block lg:w-fit hover:bg-[#ffd15e]"
             >
               {/* <Link  href={"#contact"}>Book a consultation call</Link>
               <span>

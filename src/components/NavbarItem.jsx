@@ -1,16 +1,17 @@
 import { sidebarItems } from "@/utils/constants";
 import Link from "next/link";
 
-const NavbarItem = ({ toggle }) => {
+const NavbarItem = ({ toggle, sidebar }) => {
+  const textSize = sidebar ? "text-lg" : "text-sm";
+
   return (
     <>
       {sidebarItems?.map((item) => (
-        <li
-          className="text-sm focus-within:shadow-xl"
-          key={item}
-        >
+        <li className={`${textSize} focus-within:shadow-xl`} key={item}>
           <Link
-          className="!text-[#BBDADA] focus-within:text-error"
+            className={` ${
+              sidebar ? "!text-neutral" : "!text-[#BBDADA]"
+            } focus-within:text-error`}
             onClick={(e) => (toggle ? toggle() : null)}
             href={item == "Home" ? "/" : `/#${item.toLowerCase()}`}
           >

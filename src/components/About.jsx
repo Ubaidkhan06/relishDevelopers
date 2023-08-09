@@ -8,16 +8,7 @@ import {
   fromLeft,
   fromRight,
 } from "@/utils/framerAnimations";
-import {
-  arrTools,
-  backend,
-  database,
-  devOps,
-  frontEnd,
-  projectManagementTools,
-  tempContent,
-  versionControl,
-} from "@/utils/constants";
+import { arrTools, tempContent } from "@/utils/constants";
 import TechSection from "./TechSection";
 
 const About = () => {
@@ -60,6 +51,8 @@ const About = () => {
           />
         </motion.div>
       </div>
+
+
       {/* --------------------------------------------------------------------------------------- */}
       {/* section2 */}
       <div className="bg-base-200 w-[93vw] m-auto">
@@ -71,7 +64,9 @@ const About = () => {
             transition={framerTransition}
             className="lg:w-1/2"
           >
-            <h1 className="text-2xl font-sans italic underline-offset-2 underline text-secondary text-center lg:text-left">Who we are</h1>
+            <h1 className="text-2xl font-sans  underline-offset-2 underline text-secondary text-center lg:text-left">
+              Who we are
+            </h1>
             <h1 className="text-3xl my-4 font-semibold text-center lg:text-left">
               Goal Focused
             </h1>
@@ -117,6 +112,8 @@ const About = () => {
         </motion.div>
       </div>
       {/* --------------------------------------------------------------------------------------- */}
+
+
       {/* section3 */}
       <div className="w-[90vw] py-20 m-auto">
         <motion.h1
@@ -153,9 +150,11 @@ const About = () => {
         </motion.div>
         {/* ------------------------------------------------------------------------------------ */}
       </div>
+
+
       {/* section4 */}
-      <div className="bg-base-200 p-4 mt-24 w-[90vw] m-auto">
-        <div className=" lg:flex lg:justify-between">
+      <div className="bg-base-200 mt-24 w-screen p-4 lg:px-20 lg:py-20">
+        <div className=" lg:flex space-x-4 lg:justify-between">
           <motion.div
             initial={fromLeft.initial}
             whileInView={fromLeft.animate}
@@ -163,7 +162,7 @@ const About = () => {
             transition={framerTransition}
             className="space-y-4 "
           >
-            <h1 className="text-2xl text-secondary underline italic">Our Mission</h1>
+            <h1 className="text-2xl text-secondary underline ">Our Mission</h1>
             <h1 className="text-3xl font-semibold">Inspire, Innovate, Share</h1>
             <p className="lg:w-[600px] text-xl md:text-2xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
@@ -187,7 +186,7 @@ const About = () => {
             />
           </motion.div>
         </div>
-        <div className="mt-8 lg:flex lg:flex-row-reverse lg:justify-between">
+        <div className="mt-8 lg:flex space-x-4 lg:flex-row-reverse lg:justify-between">
           <motion.div
             initial={{ opacity: 0, x: 200 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -195,7 +194,9 @@ const About = () => {
             viewport={{ once: true }}
             className="space-y-4 "
           >
-            <h1 className="text-2xl text-secondary underline underline-offset-2 italic">Our Vision</h1>
+            <h1 className="text-2xl text-secondary underline underline-offset-2">
+              Our Vision
+            </h1>
             <h1 className="text-3xl font-semibold">Laser Focus</h1>
             <p className="lg:w-[600px] text-xl lg:text-2xl md:text-2xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
@@ -221,6 +222,8 @@ const About = () => {
           </motion.div>
         </div>
       </div>
+
+
       {/* ------------------------------------------------------------------------------------ */}
       {/* section 5 */}
       <div className="p-4 w-[93vw] m-auto">
@@ -247,6 +250,8 @@ const About = () => {
           ))}
         </motion.div>
       </div>
+
+
     </div>
   );
 };

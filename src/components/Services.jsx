@@ -10,7 +10,7 @@ const Services = () => {
         id="services"
         className="p-4 bg-base-200 mt-12 pb-52"
       >
-        <h1 className="text-center font-semibold text-5xl lg:mt-16 lg:text-5xl my-2">
+        <h1 style={{fontSize : "42px"}} className="text-center font-medium lg:mt-16 lg:text-4xl my-2">
           Services that solve problems.
         </h1>
         <motion.div

@@ -65,7 +65,7 @@ const Navbar = ({ children }) => {
                   <NavbarItem />
                   <Link
                     href={"tel:+91 75659 81836"}
-                    className="btn px-6 btn-warning text-primary btn-sm rounded-full"
+                    className="btn px-6 btn-warning text-primary btn-sm hover:bg-[#ffd15e]"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
