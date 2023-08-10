@@ -25,16 +25,16 @@ export const BlogCard = ({ data }) => {
           src={data?.image}
           width={1000}
           height={1000}
-          className="object-cover h-96 w-96"
+          className="object-cover h-96 w-96 rounded-2xl"
           alt={data?.title}
         />
-        <Image
+        {/* <Image
           src={data?.image}
           alt="image"
           width={500}
           height={500}
-          className="w-full h-full object-cover"
-        />
+          className="w-full h-full object-cover rounded-2xl"
+        /> */}
       </div>
       <div className="flex flex-col justify-between h-[230px]">
         <div className=" h-[110px]">

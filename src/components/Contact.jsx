@@ -32,13 +32,17 @@ const Contact = () => {
     }
   };
 
-
   return (
     <>
-      <h1 style={{fontSize : "42px"}} className="font-medium text-center mt-16">Contact Us</h1>
+      <h1
+        style={{ fontSize: "42px" }}
+        className="font-medium text-center mt-16"
+      >
+        Contact Us
+      </h1>
       <div
         id="contact"
-        className="flex flex-col md:flex-row shadow-2xl rounded-3xl bg-base-200 m-6 md:m-12 md:mx-28 mb-28"
+        className="flex flex-col md:flex-row shadow-2xl rounded-3xl bg-base-200 m-6 md:m-12 md:mx-28 mb-36"
       >
         <div className="md:w-2/4 w-full">
           <Image
@@ -86,7 +90,10 @@ const Contact = () => {
             onChange={handleChange}
             className="textarea textarea-primary w-full bg-base-200 placeholder:text-base"
           />
-          <button type="submit" className="btn btn-warning text-primary">
+          <button
+            type="submit"
+            className="btn btn-warning text-lg hover:bg-[#ffd15e] capitalize text-primary"
+          >
             Submit
           </button>
         </form>

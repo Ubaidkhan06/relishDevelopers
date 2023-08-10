@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="footer p-10 bg-neutral text-neutral-content pb-24">
+    <footer className="footer p-10 bg-neutral text-base text-neutral-content pb-24">
       <Link href={"/"} className="flex flex-col items-center justify-center">
         <Image src={"/images/logo3.svg"} width={150} height={150} alt="img" className="" />
         <p className="text-center">
@@ -27,7 +27,7 @@ const Footer = () => {
         <a href="#contact" className="link link-hover capitalize">
           Contact
         </a>
-        <a href="#projects" className="link link-hover capitalize">
+        <a href="/projects" className="link link-hover capitalize">
           Projects
         </a>
       </div>

@@ -35,15 +35,14 @@ const Hero = () => {
             whileInView={fromRight.animate}
             transition={framerTransition}
             viewport={{ once: true }}
-            whileHover={{ translateY: -30 }}
           >
             <Image
-              src={"/images/planning.svg"}
+              src={"/images/hero-image.webp"}
               width={700}
               height={700}
               alt="hero-image"
-              className="rounded-2xl shadow-xl"
               priority
+              className="border-0 shadow-none drop-shadow-none"
             />
           </motion.div>
           <div>

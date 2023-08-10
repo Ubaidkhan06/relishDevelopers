@@ -15,7 +15,7 @@ const Projects = () => {
           >
             Our Work
           </h1>
-          <Link href={"/projects"} className="text-2xl btn btn-link hidden lg:block">View All &#8594;</Link>
+          <Link href={"/projects"} className="text-xl text-[#265547] capitalize btn btn-link hidden lg:block">View All &#8594;</Link>
         </div>
         <motion.div
           initial={fromRight.initial}
@@ -61,30 +61,30 @@ const Projects = () => {
                   width={500}
                   height={500}
                   alt="BDRM"
-                  className="h-full w-full object-contain"
+                  className="h-full w-full object-contain rounded-2xl"
                 />
               </Link>
             </div>
             <div className="flex flex-col justify-between">
-              <div className=" w-full md:h-2/5 cursor-pointer">
+              <div className=" w-full md:h-[228px] cursor-pointer">
                 <Link href={"/projects/listen2re"}>
                   <Image
                     src={"/images/Listen2Re/1.webp"}
                     width={500}
                     height={500}
                     alt="BDRM"
-                    className="h-full w-full"
+                    className="h-full w-full rounded-2xl"
                   />
                 </Link>
               </div>
-              <div className=" w-full md:h-2/5 cursor-pointer">
+              <div className=" w-full md:h-[228px] cursor-pointer">
                 <Link href={"/projects/khonsu"}>
                   <Image
                     src={"/images/Khonshu/1.webp"}
                     width={500}
                     height={500}
                     alt="BDRM"
-                    className="h-full w-full"
+                    className="h-full w-full rounded-2xl"
                   />
                 </Link>
               </div>

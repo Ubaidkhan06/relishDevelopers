@@ -48,6 +48,7 @@ const About = () => {
             width={500}
             height={500}
             alt="image"
+            className="rounded-3xl"
           />
         </motion.div>
       </div>
@@ -106,7 +107,7 @@ const About = () => {
             width={1000}
             height={1000}
             alt="image"
-            className="mt-2 w-full h-96 object-cover"
+            className="mt-2 w-full h-96 object-cover rounded-3xl"
           />
         </motion.div>
       </div>
@@ -180,7 +181,7 @@ const About = () => {
               width={500}
               height={500}
               alt="image"
-              className="w-full lg:w-[500px] lg:h-auto"
+              className="w-full lg:w-[500px] lg:h-auto rounded-3xl"
             />
           </motion.div>
         </div>
@@ -215,14 +216,14 @@ const About = () => {
               width={500}
               height={500}
               alt="image"
-              className="w-full h-auto mt-2"
+              className="w-full h-auto mt-2 rounded-3xl "
             />
           </motion.div>
         </div>
       </div>
       {/* ------------------------------------------------------------------------------------ */}
       {/* section 5 */}
-      <div className="p-4 w-[93vw] m-auto">
+      <div className="p-2 w-[95vw] m-auto">
         <h1
           style={{ fontSize: "42px" }}
           className="font-medium text-center mt-6"
@@ -234,7 +235,7 @@ const About = () => {
           whileInView={"visible"}
           // variants={framerContainer}
           viewport={{ once: true }}
-          className="flex flex-wrap gap-6 justify-evenly mt-8"
+          className="flex flex-wrap gap-4 justify-evenly mt-8"
         >
           {arrTools?.map((ele, idx) => (
             <motion.div

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const TechSection = ({ tech, title }) => {
   return (
-    <div className=" p-4 ">
+    <div className=" p-2">
       <h1 style={{ fontSize: "28px" }} className="text-center">
         {title}
       </h1>

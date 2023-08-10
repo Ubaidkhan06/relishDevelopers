@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { howWeWork } from "@/utils/constants";
 import {
@@ -7,10 +6,12 @@ import {
   framerItem,
   framerTransition,
   fromLeft,
-  fromRight,
 } from "@/utils/framerAnimations";
+
 import HowweworkItem from "./HowweworkItem";
 import Link from "next/link";
+
+
 
 const Howwework = () => {
   return (
@@ -33,7 +34,10 @@ const Howwework = () => {
             corporis harum deserunt reiciendis aliquam atque illum tempora?
             Libero, nisi inventore.
           </p>
-          <Link href={"#contact"} className="btn btn-warning text-primary btn-block hover:bg-[#ffd15e]">
+          <Link
+            href={"#contact"}
+            className="btn btn-warning capitalize text-lg text-primary btn-block hover:bg-[#ffd15e]"
+          >
             Get in touch
             <span>
               <svg

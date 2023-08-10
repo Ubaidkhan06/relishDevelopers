@@ -1,4 +1,3 @@
-"use client";
 import {
   bdrm,
   biovatikaData,
@@ -11,6 +10,7 @@ import Image from "next/image";
 import Carousel from "@/components/Carousel";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ProjectsCarousel from "@/components/UI/ProjectsCarousel";
 
 // !generating static params.
 export async function generateStaticParams(context) {
@@ -34,24 +34,15 @@ const IndividualProject = ({ params: { slug } }) => {
   return (
     <Navbar>
       <div className="bg-base-100 p-6 lg:p-14 space-y-6">
-        <h1 className="text-2xl">Web design and development</h1>
+        {/* <h1 className="text-2xl text-[#265547] underline underline-offset-8 decoration-gradient">Web design and development</h1> */}
+        <div class="relative">
+          <span class="text-2xl font-bold capitalize">Web design and development</span>
+          <span class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-[#014e4e] via-transparent to-transparent"></span>
+        </div>
+
         <h1 className="text-4xl">{data?.name}</h1>
         <p className="text-lg">{data?.about}</p>
-        <div className="bg-gradient-to-br from-[#fff1eb] h-max to-[#ace0f9] p-4">
-          <Carousel
-            data={data?.images}
-            // withButton
-            renderComponent={(data) => (
-              <Image
-                src={data}
-                alt="img"
-                width={400}
-                height={400}
-                className="lg:h-80 object-cover w-64 h-56 lg:w-96 rounded-2xl drop-shadow-lg"
-              />
-            )}
-          />
-        </div>
+        <ProjectsCarousel data={data} />
 
         <div className="lg:flex-row flex flex-wrap text-center gap-6 lg:text-left justify-around">
           <div>

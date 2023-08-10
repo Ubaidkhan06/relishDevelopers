@@ -40,9 +40,12 @@ const Projects = () => {
         md:flex md:flex-wrap md:gap-8"
         >
           {projects?.map((ele, idx) => (
-            <div className="lg:w-1/3 space-y-4" key={ele.name}>
+            <Link
+              href={`/projects/${ele.name.toLowerCase()}`}
+              className="lg:w-1/3 space-y-4"
+              key={ele.name}
+            >
               <div
-                key={ele.name}
                 className={`m-auto bg-gradient-to-br from-primary to-${colors[idx]} py-8 p-6 flex justify-center 
                 items-center lg:h-[350px] hover:-translate-y-3 transition-all ease-in-out duration-300`}
               >
@@ -59,26 +62,24 @@ const Projects = () => {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Dignissimos id rerum illo quas asperiores nobis ducimus.
               </p>
-              <Link href={`/projects/${ele.name.toLowerCase()}`}>
-                <button className="btn btn-primary p-0 btn-link btn-sm mt-2">
-                  View Portfolio
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                    />
-                  </svg>
-                </button>
-              </Link>
-            </div>
+              <button className="btn btn-primary p-0 btn-link btn-sm mt-2">
+                View Portfolio
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </button>
+            </Link>
           ))}
         </div>
         <Footer />

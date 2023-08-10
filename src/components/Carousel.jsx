@@ -1,28 +1,34 @@
 "use client";
+
 // Import Swiper React components
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import SwiperButtonNext from "./UI/SwiperButtonNext";
 import SwiperButtonPrevious from "./UI/SwiperButtonPrevious";
+import { useState } from "react";
 
-
-const Carousel = ({ data, renderComponent, size, withButton, loop, }) => {
-  const swiper = useSwiper();
+const Carousel = ({
+  data,
+  renderComponent,
+  size,
+  withButton,
+  loop,
+  forProject,
+  showButton,
+  setShowButton,
+}) => {
+  console.log(showButton);
 
   return (
     <Swiper
       spaceBetween={30}
       slidesPerView={"auto"}
-      modules={[Autoplay, Navigation]}
+      modules={[Navigation]}
       navigation={!withButton}
-      autoplay={{
-        delay: 1500,
-        disableOnInteraction: false,
-      }}
       loop={loop}
     >
       {data?.map((item, idx) => (
@@ -31,8 +37,20 @@ const Carousel = ({ data, renderComponent, size, withButton, loop, }) => {
         </SwiperSlide>
       ))}
       {withButton ? (
-        <div className="flex justify-end gap-6">
-          <SwiperButtonPrevious>
+        <div
+          className={`flex justify-${
+            forProject ? "between" : "end"
+          } overflow-visible gap-6`}
+        >
+          <SwiperButtonPrevious
+            className={`${
+              forProject
+                ? `absolute ${
+                    showButton ? "flex" : "hidden"
+                  } left-0 top-2/4 z-50`
+                : null
+            }`}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -48,7 +66,15 @@ const Carousel = ({ data, renderComponent, size, withButton, loop, }) => {
               />
             </svg>
           </SwiperButtonPrevious>
-          <SwiperButtonNext className={""}>
+          <SwiperButtonNext
+            className={`${
+              forProject
+                ? `absolute ${
+                    showButton ? "flex" : "hidden"
+                  } right-0 top-2/4 z-50`
+                : null
+            }`}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
