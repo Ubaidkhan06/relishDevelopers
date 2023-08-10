@@ -21,7 +21,9 @@ const Carousel = ({
   showButton,
   setShowButton,
 }) => {
-  console.log(showButton);
+
+
+  const temp = "justify-end justify-between"
 
   return (
     <Swiper
