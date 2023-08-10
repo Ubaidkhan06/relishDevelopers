@@ -50,6 +50,7 @@ const Projects = () => {
                 items-center lg:h-[350px] hover:-translate-y-3 transition-all ease-in-out duration-300`}
               >
                 <Image
+                  priority
                   src={ele.image}
                   width={500}
                   height={500}

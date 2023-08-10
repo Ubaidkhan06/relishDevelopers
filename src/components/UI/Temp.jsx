@@ -11,6 +11,7 @@ const Temp = ({ item }) => {
       {/* Open the modal using ID.showModal() method */}
       <button className="" onClick={() => ref?.current?.showModal()}>
         <Image
+        priority
           src={item}
           alt="img"
           width={400}
