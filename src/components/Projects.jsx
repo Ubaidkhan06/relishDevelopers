@@ -11,7 +11,7 @@ const Projects = () => {
         <div className="flex items-baseline gap-52 justify-around">
           <h1
             style={{ fontSize: "42px" }}
-            className="text-4xl font-medium p-6 pt-8 text-center"
+            className="text-4xl font-medium nvp-6 pt-8 text-center"
           >
             Our Work
           </h1>
@@ -91,7 +91,7 @@ const Projects = () => {
             </div>
           </div>
         </motion.div>
-        <div className="btn btn-link w-full flex justify-center items-center text-2xl lg:hidden">
+        <div className="btn btn-link w-full flex justify-center items-center text-xl capitalize lg:hidden">
           <Link href={"/projects"}>View all &#8594;</Link>
         </div>
       </div>

@@ -55,7 +55,7 @@ const About = () => {
 
       {/* --------------------------------------------------------------------------------------- */}
       {/* section2 */}
-      <div className="bg-base-200 w-screen space-y-6 px-14 py-12">
+      <div className="bg-base-200 w-screen space-y-6 px-6 lg:px-14 py-12">
         <div className="lg:flex lg:gap-4 lg:items-center">
           <motion.div
             initial={fromLeft.initial}
@@ -70,7 +70,7 @@ const About = () => {
             <h1 className="text-3xl my-4 font-semibold text-center lg:text-left">
               Goal Focused
             </h1>
-            <p className="lg:text-xl text-center lg:text-left">
+            <p className="lg:text-xl  lg:text-left">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum,
               illum enim. Expedita aspernatur officiis minima quae cum facilis
               recusandae numquam, ex nostrum, earum saepe nam quisquam ab,
@@ -87,7 +87,7 @@ const About = () => {
             <h1 className="text-3xl my-4 font-semibold text-center lg:text-left">
               Continuous Improvement
             </h1>
-            <p className="lg:text-xl text-center lg:text-left">
+            <p className="lg:text-xl lg:text-left">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum,
               illum enim. Expedita aspernatur officiis minima quae cum facilis
               recusandae numquam, ex nostrum, earum saepe nam quisquam ab,

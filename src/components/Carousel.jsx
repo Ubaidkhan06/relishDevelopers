@@ -2,14 +2,11 @@
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/navigation";
 import SwiperButtonNext from "./UI/SwiperButtonNext";
 import SwiperButtonPrevious from "./UI/SwiperButtonPrevious";
-import { useState } from "react";
 
 const Carousel = ({
   data,
@@ -19,20 +16,11 @@ const Carousel = ({
   loop,
   forProject,
   showButton,
-  setShowButton,
 }) => {
-
-
-  const temp = "justify-end justify-between"
+  const temp = "justify-end justify-between";
 
   return (
-    <Swiper
-      spaceBetween={30}
-      slidesPerView={"auto"}
-      modules={[Navigation]}
-      navigation={!withButton}
-      loop={loop}
-    >
+    <Swiper spaceBetween={30} slidesPerView={"auto"} loop={loop}>
       {data?.map((item, idx) => (
         <SwiperSlide key={idx} style={size}>
           {renderComponent(item)}
@@ -47,7 +35,7 @@ const Carousel = ({
           <SwiperButtonPrevious
             className={`${
               forProject
-                ? `absolute ${
+                ? `absolute bg-gray-400 border-0 hover:bg-gray-400 ${
                     showButton ? "flex" : "hidden"
                   } left-0 top-2/4 z-50`
                 : null
@@ -71,7 +59,7 @@ const Carousel = ({
           <SwiperButtonNext
             className={`${
               forProject
-                ? `absolute ${
+                ? `absolute  bg-gray-400 border-0 hover:bg-gray-400 ${
                     showButton ? "flex" : "hidden"
                   } right-0 top-2/4 z-50`
                 : null

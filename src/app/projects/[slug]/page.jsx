@@ -35,12 +35,14 @@ const IndividualProject = ({ params: { slug } }) => {
     <Navbar>
       <div className="bg-base-100 p-6 lg:p-14 space-y-6">
         {/* <h1 className="text-2xl text-[#265547] underline underline-offset-8 decoration-gradient">Web design and development</h1> */}
-        <div class="relative">
-          <span class="text-2xl font-bold capitalize">Web design and development</span>
-          <span class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-[#014e4e] via-transparent to-transparent"></span>
+        <div className="relative">
+          <span className="text-2xl text-neutral capitalize">
+            Web design and development
+          </span>
+          <span className="absolute lg:w-3/5 inset-y-8 h-0.5 inset-x-0 bottom-0 bg-gradient-to-r from-[#014e4e] via-transparent to-transparent"></span>
         </div>
 
-        <h1 className="text-4xl">{data?.name}</h1>
+        <h1 className="text-4xl font-semibold">{data?.name}</h1>
         <p className="text-lg">{data?.about}</p>
         <ProjectsCarousel data={data} />
 
